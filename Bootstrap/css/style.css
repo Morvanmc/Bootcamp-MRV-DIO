@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding-left: 50px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.about img {
+    width: 400px;
+    margin: 20px 0;
+}
+
+.about span {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.partners {
+    background-color: beige;
+}
+
+.carousel-item {
+    width: 100%;
+}

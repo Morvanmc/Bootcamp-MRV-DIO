@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-fluid text-center about">
+            <h3>About us</h3>
+            <img src="https://rawabideksa.com/img/about-us.png" alt="About us">
+            <span>WE ARE A FAMILY, WE ARE ONE</span>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid text-center partners">
+            <h3>Partners</h3>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Magalu_-_novo_logo.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+</body>
+
+</html>
